@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Open+Sans:wght@300&family=Poppins&family=Roboto+Mono:wght@100;300&display=swap');
+body{
+    background-color: #131316;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
+}
+
+section{
+    display:grid;
+    place-items:center;
+    align-content:center;
+    min-height:100vh;
+}
+.hidden{
+    opacity:0;
+    transition: all 2s;
+    transform: translateX(-100%);
+    filter:blur(5px);
+}
+.show{
+    opacity:1;
+    filter:blur(0);
+    transform:translateX(0);
+}
